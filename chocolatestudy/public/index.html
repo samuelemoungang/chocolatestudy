@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Chocolate Study — A Data Science Project</title>
+<meta name="description" content="An expert-rating analysis of 1700+ chocolate bars. HES-SO Valais, Data Science Module 376." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- BACKGROUND VIDEO -->
+  <div class="video-wrap" aria-hidden="true">
+    <video autoplay muted loop playsinline poster="poster.jpg">
+      <source src="chocolate.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay"></div>
+    <div class="grain"></div>
+  </div>
+
+  
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-mark">
+      <span class="mark-dot"></span>
+      <span class="mark-text">DSC · 376</span>
+    </div>
+    <div class="nav-meta">HES-SO Valais · 2026</div>
+  </nav>
+
+  <!-- HERO -->
+  <main class="hero">
+    <div class="hero-inner">
+
+      <p class="kicker">A study in flavor &amp; data</p>
+
+      <h1 class="title">
+        <span class="title-line">The</span>
+        <span class="title-line title-em">Chocolate</span>
+        <span class="title-line">Study</span>
+      </h1>
+
+      <p class="lede">
+        What truly predicts the rating of a chocolate bar — the cocoa percentage,
+        the maker's hand, or the origin of the bean? An analysis of
+        <span class="num">1&#8202;795</span> expert reviews.
+      </p>
+
+      <div class="signatures">
+        <span>Samuele</span>
+        <span class="dot">·</span>
+        <span>Lydia</span>
+        <span class="dot">·</span>
+        <span>Noah</span>
+      </div>
+
+      <div class="cta-row">
+        <a href="notebook.html" class="cta">
+          <span class="cta-label">Read the Notebook</span>
+          <span class="cta-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#about" class="cta cta-ghost">About the project</a>
+      </div>
+
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span>scroll</span>
+      <span class="scroll-line"></span>
+    </div>
+  </main>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="about-grid">
+
+      <div class="about-col about-col-left">
+        <p class="section-label">01 — The question</p>
+        <h2 class="section-title">Three suspects.<br/>One rating.</h2>
+      </div>
+
+      <div class="about-col about-col-right">
+        <p class="about-body">
+          Every chocolate bar carries a story written in three hands: the
+          farmer who grew the bean, the maker who roasted and conched it,
+          and the buyer who chose the percentage. We ask the data which
+          of these three hands leaves the deepest mark on quality.
+        </p>
+
+        <div class="suspects">
+          <div class="suspect">
+            <div class="suspect-num">I.</div>
+            <div class="suspect-name">Cocoa Percentage</div>
+            <div class="suspect-desc">A chemistry question. Is more always better?</div>
+          </div>
+          <div class="suspect">
+            <div class="suspect-num">II.</div>
+            <div class="suspect-name">Bean Origin</div>
+            <div class="suspect-desc">A terroir question. Does the soil speak?</div>
+          </div>
+          <div class="suspect">
+            <div class="suspect-num">III.</div>
+            <div class="suspect-name">The Maker</div>
+            <div class="suspect-desc">A craft question. Does the hand outweigh the bean?</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-row">
+      <span>HES-SO Valais — Technologies du Vivant</span>
+      <span>Data Science · Module 376 · 2026</span>
+    </div>
+    <div class="footer-row footer-row-faint">
+      <span>Dataset: Flavors of Cacao expert ratings</span>
+      <span>Supervised by S. Duerr &amp; T. Gentilhomme</span>
+    </div>
+  </footer>
+
+</body>
+</html>

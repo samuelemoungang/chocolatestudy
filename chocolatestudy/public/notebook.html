@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Notebook — The Chocolate Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --cocoa-deep: #1a0e08;
+    --cream: #f0e4d3;
+    --gold: #c9a35f;
+    --ink-soft: rgba(240, 228, 211, 0.72);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cocoa-deep);
+    color: var(--cream);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .wrap {
+    max-width: 620px;
+    text-align: center;
+  }
+  .label {
+    font-size: 0.72rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+  h1 em {
+    color: var(--gold);
+    font-weight: 300;
+  }
+  p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    margin-bottom: 2.5rem;
+  }
+  .back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.9rem 1.8rem;
+    background: transparent;
+    color: var(--cream);
+    border: 1px solid rgba(240, 228, 211, 0.3);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  .back:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .note {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: rgba(240, 228, 211, 0.04);
+    border-left: 2px solid var(--gold);
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  .note strong { color: var(--cream); }
+  code {
+    font-family: 'Courier New', monospace;
+    background: rgba(0,0,0,0.3);
+    padding: 0.1em 0.4em;
+    border-radius: 2px;
+    color: var(--gold);
+    font-size: 0.85em;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="label">Coming Soon</p>
+    <h1>The notebook is <em>in the oven</em>.</h1>
+    <p>
+      Our analysis is being roasted, conched, and tempered.
+      Once published, the full notebook will live right here.
+    </p>
+    <a href="index.html" class="back">← Back to the study</a>
+
+    <div class="note">
+      <strong>For the team:</strong> replace this file with the HTML export of your notebook.
+      Run <code>jupyter nbconvert --to html chocolate_study.ipynb --output notebook.html</code>
+      then place <code>notebook.html</code> in this <code>public/</code> folder and redeploy.
+    </div>
+  </div>
+</body>
+</html>
